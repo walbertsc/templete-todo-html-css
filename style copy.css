@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: rgb(240, 226, 226);
+}
+
+
+aside {
+    width: 100%;
+    height: 40px;
+    background: rgb(67, 82, 216);
+}
+
+main {
+    /* width: 100%;
+    height: 100vw;
+    display: flex;
+    flex-wrap: wrap; */
+    flex: 1;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    /* gap: 20px; */
+    grid-gap: 1rem;
+}
+
+.note {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    background: #ffffff;
+    margin: 12px;
+    border-radius: 5px;
+    box-shadow: 0.2em 0.2em 0.8em rgb(24, 24, 20);
+
+}
+
+.note-title {
+    width: 100%;
+    height: 30px;
+    background: #db590e;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+
+.title {
+     margin-left: 5px;
+    color: #ffffff; 
+}
+
+.note-icons {
+    margin-left: 170px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.note-item {
+    width: 95%;
+    height: 75%;
+    margin: 5px;
+
+    overflow: auto;
+}
+
+.note-footer {
+    width: 100%;
+    height: 35px;
+    /* background: rgb(230, 241, 189); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
